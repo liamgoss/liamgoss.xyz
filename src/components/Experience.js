@@ -5,25 +5,39 @@ const Experience = () => {
 
             <ul>
                 <li>
-                    <i>Clayton State University</i>, 2014-2018
+                    <i>California State University, Fresno</i>, 2020-2024
                     <ul>
-                        <li>Graduated with 3.00 GPA</li>
+                        <li><strong>Smittcamp Family Honors College</strong> Presidential Scholarship</li>
+                        <li>Bachelor of Science in Computer Engineering</li>
+                        <li>Minor in Cybersecurity</li>
+                        <li>Minor in Applied Mathematics</li>
+                        <li>Undergraduate Research on In-Vehicle Network Security</li>
                     </ul>
                 </li>
+
                 <li>
-                    <i>TechFlow</i> - <strong>Blockchain Developer Intern</strong>, 2018-2019
+                    <i>Arbitrade</i> - <strong>Founder</strong>, 2022-Present
                     <ul>
-                        <li>Studied DApp development</li>
-                        <li>Assisted Research &amp; Development on Web3 Products</li>
+                        <li>Automated cryptocurrency arbitrage trading platform</li>
+                        <li>Developed using Python, Node.js, &amp; Solidity Smart Contracts</li>
                     </ul>
                 </li>
+
                 <li>
-                    <i>SpiderChain</i> - <strong>Blockchain Developer</strong>, 2019-2022
+                    <i>Upwork</i> - <strong>Freelance Programmer</strong>, 2020-Present
                     <ul>
-                        <li>Contributed to smart contract development on client's platform</li>
-                        <li>Peer reviewed &amp; Audited Solidity code</li>
+                        <li>Speciality in automation, microcontrollers, and Web3 development</li>
                     </ul>
                 </li>
+
+                <li>
+                    <i>City of Visalia, IT Department</i> - <strong>Student Intern Programmer</strong>, 2018
+                    <ul>
+                        <li>Developed automated systems using Python to accelerate front desk and IT workflow.</li>
+                    </ul>
+                </li>
+
+                
             </ul>
         </div>
     );

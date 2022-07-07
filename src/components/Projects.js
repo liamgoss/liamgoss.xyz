@@ -1,49 +1,72 @@
 // Import Assets
-import uniswap from '../assets/uniswap.png';
-import compound from '../assets/compound.png';
-import aave from '../assets/aave.png';
+import React, { useState, useEffect, useRef } from 'react';
+import arbitrade from '../assets/Arbitrade.png';
+import usnscc from '../assets/USNSCC.png';
+import Modal from './Modal/Modal';
+import usb2can from '../assets/USB2CAN_top.jpg';
 
 const Projects = () => {
+    const [height, setHeight] = useState(0)
+    const ref = useRef(null)
+
+    useEffect(() => {setHeight(ref.current.clientHeight)})
+
+
     return (
         <section className="projects">
             <h2>My Projects</h2>
 
             <div className="projects__cards">
 
-                <div className="projects__card">
-                    <h3>Uniswap</h3>
-                    <img src={uniswap} alt="Uniswap Swap Page" />
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                        Facilis consectetur facere neque assumenda quasi aliquid,
-                        perferendis ratione rerum dolorem.
-                    </p>
-
-                    <a href="https://uniswap.org/" target="_blank" className="button">Site</a>
-                    <a href="https://github.com/Uniswap/v2-core" target="_blank" className="button">Code</a>
+                <div ref={ref} className="projects__card" style={{ height: '70vh' }}>
+                <div style={{display: 'flex',  justifyContent:'center', alignItems:'center'}}>
+                    <h3>Arbitrade</h3>
                 </div>
 
-                <div className="projects__card">
-                    <h3>Compound</h3>
-                    <img src={compound} alt="Compound Landing Page" />
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                        Facilis consectetur facere neque assumenda quasi aliquid,
-                        perferendis ratione rerum dolorem.
-                    </p>
+                    
+                    <img src={arbitrade} alt="Arbitrade" />
+                    <p>A decentralized cryptocurrency trading platform designed for risk-free arbitrage trading using flashloans!</p>
 
-                    <a href="https://compound.finance/" target="_blank" className="button">Site</a>
-                    <a href="https://github.com/compound-finance/compound-protocol" target="_blank" className="button">Code</a>
+                    <div style={{
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        
+                    }}><Modal></Modal></div>
+                    
                 </div>
 
-                <div className="projects__card">
-                    <h3>Aave</h3>
-                    <img src={aave} alt="Aave Landing Page" />
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                        Facilis consectetur facere neque assumenda quasi aliquid,
-                        perferendis ratione rerum dolorem.
+                <div ref={ref} className="projects__card" style={{ height: '70vh' }}>
+                    <div style={{display: 'flex',  textAlign: 'center', alignItems:'center'}}>
+                        <h3>Nissan CAN Bus Reverse Engineering</h3>
+                    </div>
+                    <img src={usb2can} alt="Nissan CAN Bus Reverse Engineering" />
+                    <p>Python code written to utilize the Korlan usb2can hardware to send and receive data over the can-bus on a 2008 Nissan 350z
                     </p>
+                    
+                    <a href="https://github.com/liamgoss/nissan_ecu_hacking" target="_blank" className="button" style={{
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        
+                    }}>Code</a>    
+                        
+                    
+                    
+                </div>
 
-                    <a href="https://aave.com/" target="_blank" className="button">Site</a>
-                    <a href="https://github.com/aave/aave-v3-core" target="_blank" className="button">Code</a>
+                <div className="projects__card" style={{ height: '70vh' }} >
+                    
+
+                    <div style={{display: 'flex',
+                        alignItems: 'center',
+                        textAlign: 'center'}}><h3>Nonprofit Web Development</h3>
+                    </div>
+                    
+                    <img src={usnscc} alt="Nonprofit Web Development" />
+                    <p>Built and maintained the website for the United States Naval Sea Cadet Corps Kings County Squadron</p>
+
+                    
                 </div>
             </div>
         </section>

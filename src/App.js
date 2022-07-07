@@ -6,12 +6,13 @@ import Experience from './components/Experience';
 import Social from './components/Social';
 import Footer from './components/Footer';
 
+
 function App() {
 	return (
 		<div className="App">
 			<Header />
-			<About />
 			<Projects />
+			<About />
 			<Experience />
 			<Social />
 			<Footer />
