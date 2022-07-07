@@ -27,6 +27,7 @@ export default function Modal() {
             <h2>Sorry about that!</h2>
             <p>
               Arbitrade is still closed-source and under development at this time! If you'd like to view the minimum viable product, check out the github project below!
+              If you'd like to view the current source code, reach out to me on one of my socials at the bottom of this page!
             </p>
             <a href="https://github.com/liamgoss/Polygon-Arbitrage-Bot">Arbitrage Proof of Concept</a>
             <button className="close-modal" onClick={toggleModal}>
