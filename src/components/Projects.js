@@ -11,14 +11,14 @@ const Projects = () => {
 
     useEffect(() => {setHeight(ref.current.clientHeight)})
 
-
+    var items = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
     return (
         <section className="projects">
             <h2>My Projects</h2>
 
             <div className="projects__cards">
 
-                <div ref={ref} className="projects__card" style={{ height: '70vh' }}>
+                <div ref={ref} className="projects__card" style={{ height: 'auto' }}>
                 <div style={{display: 'flex',  justifyContent:'center', alignItems:'center'}}>
                     <h3>Arbitrade</h3>
                 </div>
@@ -36,7 +36,7 @@ const Projects = () => {
                     
                 </div>
 
-                <div ref={ref} className="projects__card" style={{ height: '70vh' }}>
+                <div ref={ref} className="projects__card" style={{ height: 'auto' }}>
                     <div style={{display: 'flex',  textAlign: 'center', alignItems:'center'}}>
                         <h3>Nissan CAN Bus Reverse Engineering</h3>
                     </div>
@@ -55,7 +55,7 @@ const Projects = () => {
                     
                 </div>
 
-                <div className="projects__card" style={{ height: '70vh' }} >
+                <div className="projects__card" style={{ height: 'auto' }} >
                     
 
                     <div style={{display: 'flex',
@@ -69,6 +69,7 @@ const Projects = () => {
                     
                 </div>
             </div>
+            
         </section>
     );
 }
