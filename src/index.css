@@ -193,9 +193,29 @@ code {
   display: inline-block;
 
   background: #12BDF3;
-
+  color: #000000;
   padding: 15px 50px;
+  width: 100%;
+  border: none;
+  border-radius: 8px;
 
+  font-family: "Work Sans";
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+
+  cursor: pointer;
+
+  transition: all 250ms ease;
+}
+
+.buttonSocial {
+  display: inline-block;
+
+  background: #12BDF3;
+  color: #000000;
+  padding: 15px 15px;
+  margin: 10px;
   border: none;
   border-radius: 8px;
 
